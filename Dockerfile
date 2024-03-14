@@ -5,8 +5,7 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Step 3: Copy the current directory contents into the container at /app
-#COPY ./my-first-react-app .
-RUN git clone https://github.com/tamasborsos2/docker-example.git
+COPY ./my-first-react-app .
 
 # Step 4: Install any needed packages specified in package.json
 RUN npm install
